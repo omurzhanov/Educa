@@ -25,6 +25,7 @@ path('module/<int:module_id>/content/<model_name>/<id>/',
 path('content/<int:id>/delete/',
                                 views.ContentDeleteView.as_view(),
                                 name='module_content_delete'),
+<<<<<<< HEAD
 path('module/<int:module_id>/', views.ModuleContentListView.as_view(), name='module_content_list'),
 path('module/order/',
 views.ModuleOrderView.as_view(), name='module_order'),
@@ -32,4 +33,7 @@ views.ModuleOrderView.as_view(), name='module_order'),
 path('content/order/',
 views.ContentOrderView.as_view(),
 name='content_order'),
+=======
+path('module/<int:module_id>/', views.ModuleContentListView.as_view(), name='module_content_list'),  
+>>>>>>> 90afd6a6b708b9585b1109759e5f2bbd2315e2e4
 ]
